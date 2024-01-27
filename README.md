@@ -55,7 +55,7 @@ Here's a complete overview of the pipeline:
 <img src="" alt="AirRealtor Data architecture Diagram" style="width:100%;"/>
 
 ## Workflow Chart
-<img src="images/ALiExpress_Flow_Chart.jpg" alt="AliExpress flow chart" style="width:100%; height:30%;"/>
+<img src="Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" style="width:100%; height:30%;"/>
 
 The airflow dag orchestrate the ETL (Extract, Transform, Load) process for real estate data.
 When an airflow DAG starts:
