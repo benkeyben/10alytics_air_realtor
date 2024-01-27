@@ -85,7 +85,7 @@ I've written steps to recreate this pipeline. Refer to the top section [Go to To
   -  Community and Documentation: Stay engaged with the community for support; supplement with additional resources if official documentation lacks clarity.
 
 ## Conclusion
-I hope you find it enjoyable. If you encounter any issues or have questions about the project or suggestions for improvement, please feel free to leave a comment or send me a direct message on Twitter or Linkedin.
+I hope you find it enjoyable. If you encounter any issues or have questions about the project or suggestions for improvement, please feel free to leave a comment or send me a direct message on Twitter or [LinkedIn](https://www.linkedin.com/in/benjamin-yankey-570b7a158).
 
 
 
