@@ -67,13 +67,12 @@ When an airflow DAG starts:
 <img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" height="800"/>
 
 ## Setting up the pipeline
-I've written steps to recreate this pipeline. Refer to the top section to locate setup.ipynb notebook file.
+I've written steps to recreate this pipeline. Refer to the top section [🔝 Go to Top](#) to locate setup.ipynb notebook file.
 
 ## Challenges
   -  Setup and Configuration: Setting up Airflow and making it work with other systems can be tricky at first.
   -  Debugging and Monitoring: Finding and fixing problems in your workflows is hard, so it's important to keep track of what's happening.
   -  Versioning and Deployment: Changing and updating your workflows for different uses can be difficult, and putting those changes into action needs a careful process.
-  -  Task Dependency Management: Figuring out which tasks need to happen in a certain order can be tricky, especially when things change.
   -  Scalability: Making sure Airflow can handle more and more tasks as you need it to is important. You have to set it up in a way that works well as things get busier.
   -  Security Concerns: Keeping important information safe, like passwords, is crucial. You need to know how to handle and protect these secret codes.
 
@@ -81,8 +80,6 @@ I've written steps to recreate this pipeline. Refer to the top section to locate
   -  Setup and Configuration: Ensure thorough setup and configuration; pay attention to external connections.
   -  Debugging and Monitoring: Establish robust logging and monitoring practices for effective issue identification.
   -  Versioning and Deployment: Implement a well-organized version control system for smooth workflow changes.
-  -  Task Dependency Management: Plan task dependencies carefully, considering potential changes.
-  -  External System Integration: Understand and leverage available hooks and operators for seamless integration.
   -  Security Concerns: Prioritize secure credential management, safeguarding sensitive information.
   -  Scalability: Configure Airflow for scalability to handle growing task loads efficiently.
   -  Community and Documentation: Stay engaged with the community for support; supplement with additional resources if official documentation lacks clarity.
