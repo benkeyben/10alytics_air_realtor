@@ -67,7 +67,7 @@ When an airflow DAG starts:
 <img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" height="800"/>
 
 ## Setting up the pipeline
-I've written steps to recreate this pipeline. Refer to the top section [🔝 Go to Top](#) to locate setup.ipynb notebook file.
+I've written steps to recreate this pipeline. Refer to the top section [Go to Top](../../#) to locate setup.ipynb notebook file.
 
 ## Challenges
   -  Setup and Configuration: Setting up Airflow and making it work with other systems can be tricky at first.
