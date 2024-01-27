@@ -51,17 +51,21 @@ The data source for AirRealtor is the Realty Mole Property API, accessed via <a 
 property information essential for real estate analytics.
 
 ## Pipeline Overview
+
 Here's a complete overview of the pipeline:
+
 <img src="images/Air_Realtor_Data_Architecture.png" alt="AirRealtor Data architecture Diagram" style="width:100%;"/>
+
+The airflow DAG orchestrates the ETL (Extract, Transform, Load) process for real estate data.
+When an airflow DAG starts:
+  - It executes the python script to fetch json data from Realty Mole Property API into a staging area in an EC2 instance.
+  - The python script transforms the data into pandas dataframe.
+  - The data is cleaned and organized using functions in the script.
+  - Finally, the cleaned and transformed dataframes are loaded to an AWS S3 bucket.
 
 ## AirRealtor Data Dimension Model
 <img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" height="800"/>
 
-The airflow dag orchestrate the ETL (Extract, Transform, Load) process for real estate data.
-When an airflow DAG starts:
-  - It execute the python script to fetch json data from Realty Mole Property API into a staging area in an EC2 instance.
-  - The python script transform data into pandas dataframe.
-  - The data is clean and transformed using functions in the script.
-  - Finally, the cleaned and transformed dataframes are saved to an AWS S3 bucket.
+## Challenges
 
 
