@@ -1,0 +1,13 @@
+# .gitignore
+config.ini
+__pycache__
+airflow-ec2.pem
+ec2-key-pair.pem
+reality_mole.json
+airflow_ec2_setup.txt
+airflow_ec2_setup2.txt
+airflow_installation_setup.txt
+airflow_postgre_ec2_s3_setup.txt
+airflow_postgre_ec2_s3_setup.ipynb
+Air_Realtor_Dimension_Model.drawio
+.$Air_Realtor_Dimension_Model.drawio.bkp
