@@ -39,13 +39,6 @@ solution further exacerbates these issues, limiting the organization's ability t
   -  AWS EC2: Virtual servers for hosting and running data processing tasks.
   -  AWS S3: Object storage for storing and managing large volumes of data.
 
-## Benefits (For Data Engineers)
-  -  Increased operational efficiency through automated data workflows.
-  -  Enhanced data accuracy and quality, reducing errors in decision-making.
-  -  Improved scalability and flexibility for handling growing data volumes.
-  -  Real-time insights into market trends and customer behavior.
-  -  Streamlined collaboration between data engineering and other business units.
-
 ## Data Source
 The data source for AirRealtor is the Realty Mole Property API, accessed via <a href="https://rapidapi.com/realtymole/api/realty-mole-property-api" target="_blank">RapidAPI</a>. This API provides comprehensive 
 property information essential for real estate analytics.
@@ -68,6 +61,13 @@ When an airflow DAG starts:
 
 ## Setting up the pipeline
 I've written steps to recreate this pipeline. Refer to the top section [Go to Top](../../#) to locate setup.ipynb notebook file.
+
+## Benefits (For Data Engineers)
+  -  Increased operational efficiency through automated data workflows.
+  -  Enhanced data accuracy and quality, reducing errors in decision-making.
+  -  Improved scalability and flexibility for handling growing data volumes.
+  -  Real-time insights into market trends and customer behavior.
+  -  Streamlined collaboration between data engineering and other business units.
 
 ## Challenges
   -  Setup and Configuration: Setting up Airflow and making it work with other systems can be tricky at first.
