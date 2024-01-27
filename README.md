@@ -25,7 +25,7 @@ Manual data handling processes result in time-consuming workflows, leading to de
 to inconsistencies and inaccuracies, hindering the reliability of information crucial for strategic planning. The absence of a robust ETL 
 solution further exacerbates these issues, limiting the organization's ability to harness the full potential of its data assets.
 
-## Objectives (For Data Engineers)
+## Objectives (For Data Engineer)
   -  Develop and implement ETL pipelines using Airflow to automate data workflows.
   -  Integrate data from diverse sources such as property listings, market trends, and customer interactions.
   -  Ensure real-time or near-real-time data processing for timely decision-making.
@@ -54,8 +54,8 @@ property information essential for real estate analytics.
 Here's a complete overview of the pipeline:
 <img src="" alt="AirRealtor Data architecture Diagram" width="500"/>
 
-<img src="" alt="AirRealtor Data architecture Diagram" width="500"/>
-
+## Workflow Chart
+<img src="images/ALiExpress_Flow_Chart.jpg" alt="AliExpress flow chart" width="500"/>
 The airflow dag orchestrate the ETL (Extract, Transform, Load) process for real estate data.
 When an airflow DAG starts:
   - It execute the python script to fetch json data from Realty Mole Property API into a staging area in an EC2 instance.
