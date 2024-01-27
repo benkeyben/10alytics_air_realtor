@@ -60,7 +60,7 @@ When an airflow DAG starts:
 <img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" height="800"/>
 
 ## Setting up the pipeline
-I've written steps to recreate this pipeline. Refer to the top section [Go to Top](../../#) to locate setup.ipynb notebook file which contains all the steps.
+I've written steps to recreate this pipeline. Refer to the top section [Go to Top](../../#) to locate setup_data_pipeline.ipynb notebook file which contains all the steps.
 
 ## Benefits (For Data Engineer)
   -  Increased operational efficiency through automated data workflows.
