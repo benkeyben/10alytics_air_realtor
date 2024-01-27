@@ -54,6 +54,8 @@ property information essential for real estate analytics.
 Here's a complete overview of the pipeline:
 <img src="" alt="AirRealtor Data architecture Diagram" width="500"/>
 
+<img src="" alt="AirRealtor Data architecture Diagram" width="500"/>
+
 The airflow dag orchestrate the ETL (Extract, Transform, Load) process for real estate data.
 When an airflow DAG starts:
   - It execute the python script to fetch json data from Realty Mole Property API into a staging area in an EC2 instance.
