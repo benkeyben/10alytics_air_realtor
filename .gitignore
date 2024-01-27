@@ -1,6 +1,7 @@
 # .gitignore
 config.ini
 __pycache__
+setup_data.txt
 airflow-ec2.pem
 ec2-key-pair.pem
 reality_mole.json
