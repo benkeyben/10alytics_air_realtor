@@ -54,8 +54,8 @@ property information essential for real estate analytics.
 Here's a complete overview of the pipeline:
 <img src="images/Air_Realtor_Data_Architecture.png" alt="AirRealtor Data architecture Diagram" style="width:100%;"/>
 
-## AirRealtor Data Model
-<img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" />
+## AirRealtor Data Dimension Model
+<img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" height="800"/>
 
 The airflow dag orchestrate the ETL (Extract, Transform, Load) process for real estate data.
 When an airflow DAG starts:
