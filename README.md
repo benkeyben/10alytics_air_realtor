@@ -60,11 +60,14 @@ The airflow DAG orchestrates the ETL (Extract, Transform, Load) process for real
 When an airflow DAG starts:
   - It executes the python script to fetch json data from Realty Mole Property API into a staging area in an EC2 instance.
   - The python script transforms the data into pandas dataframe.
-  - The data is cleaned and organized using functions in the script.
+  - The data is cleaned and organized using pandas library.
   - Finally, the cleaned and transformed dataframes are loaded to an AWS S3 bucket.
 
 ## AirRealtor Data Dimension Model
 <img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" height="800"/>
+
+## Setting up the pipeline
+I've written steps to recreate this pipeline. Refer to the top section to locate setup.ipynb notebook file.
 
 ## Challenges
   -  Setup and Configuration: Setting up Airflow and making it work with other systems can be tricky at first.
