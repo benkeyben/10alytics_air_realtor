@@ -39,29 +39,53 @@ solution further exacerbates these issues, limiting the organization's ability t
   -  AWS EC2: Virtual servers for hosting and running data processing tasks.
   -  AWS S3: Object storage for storing and managing large volumes of data.
 
-## Benefits (For Data Engineers)
+## Data Source
+The data source for AirRealtor is the Realty Mole Property API, accessed via <a href="https://rapidapi.com/realtymole/api/realty-mole-property-api" target="_blank">RapidAPI</a>. This API provides comprehensive 
+property information essential for real estate analytics.
+
+## Pipeline Overview
+
+Here's a complete overview of the pipeline:
+
+<img src="images/Air_Realtor_Data_Architecture.png" alt="AirRealtor Data architecture Diagram" style="width:100%;"/>
+
+The airflow DAG orchestrates the ETL (Extract, Transform, Load) process for real estate data.
+When an airflow DAG starts:
+  - It executes the python script to fetch json data from Realty Mole Property API into a staging area in an EC2 instance.
+  - The python script transforms the data into pandas dataframe.
+  - The data is cleaned and organized using pandas library.
+  - Finally, the cleaned and transformed dataframes are loaded to an AWS S3 bucket.
+
+## AirRealtor Data Dimension Model
+<img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" height="800"/>
+
+## Setting up the pipeline
+I've written steps to recreate this pipeline. Refer to the top section [Go to Top](../../#) to locate setup.ipynb notebook file which contains all the steps.
+
+## Benefits (For Data Engineer)
   -  Increased operational efficiency through automated data workflows.
   -  Enhanced data accuracy and quality, reducing errors in decision-making.
   -  Improved scalability and flexibility for handling growing data volumes.
   -  Real-time insights into market trends and customer behavior.
   -  Streamlined collaboration between data engineering and other business units.
 
-## Data Source
-The data source for AirRealtor is the Realty Mole Property API, accessed via <a href="https://rapidapi.com/realtymole/api/realty-mole-property-api" target="_blank">RapidAPI</a>. This API provides comprehensive 
-property information essential for real estate analytics.
+## Challenges
+  -  Setup and Configuration: Setting up Airflow and making it work with other systems can be tricky at first.
+  -  Debugging and Monitoring: Finding and fixing problems in your workflows is hard, so it's important to keep track of what's happening.
+  -  Versioning and Deployment: Changing and updating your workflows for different uses can be difficult, and putting those changes into action needs a careful process.
+  -  Scalability: Making sure Airflow can handle more and more tasks as you need it to is important. You have to set it up in a way that works well as things get busier.
+  -  Security Concerns: Keeping important information safe, like passwords, is crucial. You need to know how to handle and protect these secret codes.
 
-## Pipeline Overview
-Here's a complete overview of the pipeline:
-<img src="" alt="AirRealtor Data architecture Diagram" style="width:100%;"/>
+## Recommendations
+  -  Setup and Configuration: Ensure thorough setup and configuration; pay attention to external connections.
+  -  Debugging and Monitoring: Establish robust logging and monitoring practices for effective issue identification.
+  -  Versioning and Deployment: Implement a well-organized version control system for smooth workflow changes.
+  -  Security Concerns: Prioritize secure credential management, safeguarding sensitive information.
+  -  Scalability: Configure Airflow for scalability to handle growing task loads efficiently.
+  -  Community and Documentation: Stay engaged with the community for support; supplement with additional resources if official documentation lacks clarity.
 
-## Workflow Chart
-<img src="images/Air_Realtor_Dimension_Model.jpg" alt="AirRealtor Data Dimension Model" />
+## Conclusion
+I hope you find it enjoyable. If you encounter any issues or have questions about the project or suggestions for improvement, please feel free to leave a comment or send me a direct message on [Twitter](https://twitter.com/leetsoftdotnet) or [LinkedIn](https://www.linkedin.com/in/benjamin-yankey-570b7a158).
 
-The airflow dag orchestrate the ETL (Extract, Transform, Load) process for real estate data.
-When an airflow DAG starts:
-  - It execute the python script to fetch json data from Realty Mole Property API into a staging area in an EC2 instance.
-  - The python script transform data into pandas dataframe.
-  - The data is clean and transformed using functions in the script.
-  - Finally, the cleaned and transformed dataframes are saved to an AWS S3 bucket.
 
 
