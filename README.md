@@ -1,4 +1,5 @@
 # AirRealtor: Real Estate Data Integration, an end-to-end data pipeline on AWS
+<img src="images/air_realtor_banner.jpg" alt="Air realtor banner" style="width:100%;"/>
 
 ## Project Description
   
